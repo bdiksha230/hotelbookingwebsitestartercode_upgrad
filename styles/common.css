@@ -2,8 +2,23 @@
     margin: 0;
     padding: 0;
 }
+.main{
+    margin: 10px;
+}
 
 .logo{
     width: 250px;
     height: 200px
+}
+.socialmedia-img{
+    height: 20px;
+    width: 22px;
+}
+
+p, h1, h2, h3, h4, h5, a{
+    margin-bottom: 20px;
+}
+ul{
+    list-style-type: disc;
+    padding-left: 20px;
 }
