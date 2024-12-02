@@ -1,0 +1,12 @@
+.loader-div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.spinner-border{
+   
+    width: 160px !important;
+    height: 160px !important; 
+ 
+}

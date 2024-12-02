@@ -2,23 +2,71 @@
     margin: 0;
     padding: 0;
 }
-.main{
-    margin: 10px;
+html, body{
+    width: 100%;
+    height: auto;
+    background-color: #e0e0e0;
+    font-family: 'Ubuntu', sans-serif;
 }
+section{
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+header{
+    background-color: rosybrown;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 5px 20px;
+}
+ 
 
 .logo{
-    width: 250px;
-    height: 200px
+    width: 60px;
+    height: 60px
 }
 .socialmedia-img{
     height: 20px;
     width: 22px;
 }
-
-p, h1, h2, h3, h4, h5, a{
-    margin-bottom: 20px;
+.login-btn{
+    
 }
+ 
 ul{
     list-style-type: disc;
     padding-left: 20px;
+}
+
+.banner img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+
+
+ footer{
+    background-color: rosybrown;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.footer-div{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.contact_btn{
+    color: #fff;
+    background-color: #60b1ba;
 }

@@ -1,0 +1,12 @@
+.payment_card{
+    padding-top: 150px;
+}
+.user-details{
+    background-color: rosybrown;
+    border: 2px solid black;
+    margin: 0px 50px 0px 50px;
+    padding: 20px 0px;
+}
+.payment_card .card-body-text{
+    background-color: #c7c7c7;
+}

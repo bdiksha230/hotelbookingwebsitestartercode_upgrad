@@ -7,86 +7,129 @@
     <title>Hotel Booking project of upgrad</title>
     <link rel="stylesheet" href="styles/detail.css">
     <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
 </head>
 
 <body>
-    <div class="main">
-        <div class="header">
-            <img class="logo" src="assests/images/logo.png" alt="">
-            <div class=""> Header Div</div>
-        </div>
-        <div class="content-Div">
-            <div class="hotel-detail">
-                <div class="hotel_item">
-                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg
-                " alt="">
+    <div class="page">
+        <header>
+            <div class="header">
+                <img class="logo" src="assests/images/logo.png" alt="">
+                <div class=""> Header Div</div>
+            </div>
+        </header>
 
-                    <div class="booknow_form">
-                        <div class="group">
-                            <label for="">Adult</label>
-                            <input type="Number">
-                        </div> 
-                        <div class="group">
-                            <label for="">Name</label>
-                            <input type="text">
+        <main>
+            <section class="hotel-booking-section">
+                <div class="container-fluid">
+                    <div class="hotel_booking_wrap">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <img class="detailpage_img" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg
+                        " alt="">
+                            </div>
+                            <div class="col-md-4">
+                                <div class="hotel_booking_form">
+                                    <form>
+                                        <div class="form-group row">
+                                            <label for="" class="col-sm-3 col-form-label">Adult</label>
+                                            <div class="col-sm-9">
+                                                <input type="number" class="form-control" id=" ">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="" class="col-sm-3 col-form-label">Name</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" id=" ">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label for="" class="col-sm-3 col-form-label">From Date</label>
+                                            <div class="col-sm-9">
+                                                <input type="date" class="form-control" id=" ">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="" class="col-sm-3 col-form-label">To Date</label>
+                                            <div class="col-sm-9">
+                                                <input type="date" class="form-control" id=" ">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="" class="col-sm-3 col-form-label">Total</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" id=" ">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-10 text-center">
+                                                <a href="payment.html">
+                                                    <button type="submit" class="btn btn-primary">Book Now</button>
+                                                </a>
+                                            </div>
+                                            <a href="payment.html"> Book Now 
+                                            </a>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
                         </div>
-                        <div class="group">
-                            <label for="">From Date</label>
-                            <input type="date">
-                        </div>
-                        <div class="group">
-                            <label for="">To Date</label>
-                            <input type="date">
-                        </div>
-                        <div class="group">
-                            <label for="">Total</label>
-                            <input type="text">
-                        </div>
-                        <a href="payment.html"></a><button>Book Now</button>
                     </div>
- 
-                    <a href="">
-                        <h4>Radisson Blue Hotel</h4>
-                    </a>
-                    <p>Rating</p>
-                    <p>5 Star</p>
-                    <h3>AMENITIES</h3>
-                    <ul>
-                        <li>Room service</li>
-                        <li>Restaurant</li>
-                        <li>Buissness center</li>
-                        <li>Fitness center</li>
-                        <li>Pool</li>
-                    </ul>
-                    <h3>Description</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus quis, quos, dolorum eveniet iste,
-                        magnam recusandae deleniti veniam rerum et rem expedita libero. Non exercitationem autem alias
-                        quod ea. Inventore?</p>
+
+                    <div class="hotel_bkking_details mt-5">
+                        <h2>Radisson Blue Hotel</h2>
+                        <p>Rating</p>
+                        <p>5 Star</p>
+                        <h3>AMENITIES</h3>
+                        <ul>
+                            <li>Room service</li>
+                            <li>Restaurant</li>
+                            <li>Buissness center</li>
+                            <li>Fitness center</li>
+                            <li>Pool</li>
+                        </ul>
+                        <h3>Description</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus quis, quos, dolorum eveniet
+                            iste,
+                            magnam recusandae deleniti veniam rerum et rem expedita libero. Non exercitationem autem
+                            alias
+                            quod ea. Inventore?</p>
+                    </div>
                 </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <div class="footer-div">
+                <div>
+                    <a href="contact.html" class="btn contact_btn"> Contact us </a>
+
+                </div>
+                <div class="copyright">
+                    <p class="m-0">@ 2020 ROOM SEARCH PVT. LTD.</p>
+                </div>
+                <div class="socialmedia_link">
+                    <a href="https://www.facebook.com/"> <img class="socialmedia-img" src="assests/images/facebook.png"
+                            alt=""> </a>
+                    <a href="https://www.instagram.com/"> <img class="socialmedia-img"
+                            src="assests/images/instagram.png" alt=""> </a>
+                    <a href="https://www.twitter.com/"> <img class="socialmedia-img" src="assests/images/twitter.png"
+                            alt=""> </a>
+
+                </div>
+
             </div>
 
-        </div>
-        <div class="footer-div">
-
-
-            <div>
-                <a href="contact.html"> Contact us </a>
-            </div>
-
-            <div class="socialmedia_link">
-                <a href="https://www.facebook.com/"> <img class="socialmedia-img" src="assests/images/facebook.png"
-                        alt=""> </a>
-                <a href="https://www.instagram.com/"> <img class="socialmedia-img" src="assests/images/instagram.png"
-                        alt=""> </a>
-                <a href="https://www.twitter.com/"> <img class="socialmedia-img" src="assests/images/twitter.png"
-                        alt=""> </a>
-
-            </div>
-            <div class="copyright">
-                <p>@ 2020 ROOM SEARCH PVT. LTD.</p>
-            </div>
-        </div>
+        </footer>
     </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
 </body>
 

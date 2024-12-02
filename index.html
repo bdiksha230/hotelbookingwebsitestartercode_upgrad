@@ -5,52 +5,198 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Booking project of upgrad</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/common.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  
+
+
 </head>
 
 <body>
-    <div class="main">
-        <div class="header">
-            <img class="logo" src="assests/images/logo.png" alt="">
-            <a href="login.html">Login</a>
-        </div>
-        <div class="content-Div">
-            <div class="search-bar">
-                <input type="search" value="city">
-            </div>
-            <a href="list.html">
-                <img class="city-img" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg
-            " alt="">
-            </a>
-            <img class="city-img" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg
-            " alt="">
-            <img class="city-img" src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg"
-                alt="">
-            <img class="city-img" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg"
-                alt="">
-            <div class="">
-                <a href="index.html"> View More >></a>
-            </div>
-        </div>
-        <div class="footer-div">
-            <div>
-                <a href="contact.html"> Contact us </a>
-            </div>
-            <div class="socialmedia_link">
-                <a href="https://www.facebook.com/"> <img class="socialmedia-img" src="assests/images/facebook.png"
-                        alt=""> </a>
-                <a href="https://www.instagram.com/"> <img class="socialmedia-img" src="assests/images/instagram.png"
-                        alt=""> </a>
-                <a href="https://www.twitter.com/"> <img class="socialmedia-img" src="assests/images/twitter.png"
-                        alt=""> </a>
+    <div class="page">
+        <header>
+            <div class="header">
+                <div class="logo-wrap">
+                    <img class="logo" src="assests/images/logo.png" alt="logo">
+                </div>
+                <div class="login_btn">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white login-btn" data-toggle="modal" data-target="#login-modal">
+                        Login
+                    </button>
+
+
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="login-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp">
+
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary">Login</button>
+                                </form>
+                            </div>
+                            <!-- <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
 
             </div>
-            <div class="copyright">
-                <p>@ 2020 ROOM SEARCH PVT. LTD.</p>
+        </header>
+        <main>
+            <section>
+                <div class="banner">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg" alt="">
+                    <div class="search-bar">
+                        <input type="search" class="city-search-bar" value="city">
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <div class="city_img_wrap">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+                            <a href="list.html">
+                                <div class="overlay_img_wrap">
+                                    <img class="city-img"
+                                        src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg"
+                                        alt="">
+                                    <div class="overlay">
+                                        <h4>Delhi</h4>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="list.html">
+                                <div class="overlay_img_wrap">
+                                    <img class="city-img"
+                                        src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg"
+                                        alt="">
+                                    <div class="overlay">
+                                        <h4>Goa</h4>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="list.html">
+                                <div class="overlay_img_wrap">
+                                    <img class="city-img"
+                                        src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg"
+                                        alt="">
+                                    <div class="overlay">
+                                        <h4>Hyderabad</h4>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="list.html">
+                                <div class="overlay_img_wrap">
+                                    <img class="city-img"
+                                        src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg"
+                                        alt="">
+                                    <div class="overlay">
+                                        <h4>Kolkata</h4>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="list.html">
+                                <div class="overlay_img_wrap">
+                                    <img class="city-img"
+                                        src="https://media-cdn.tripadvisor.com/media/photo-s/15/4d/46/b8/chennai-madras.jpg"
+                                        alt="">
+                                    <div class="overlay">
+                                        <h4>Chennai</h4>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="list.html">
+                                <div class="overlay_img_wrap">
+                                    <img class="city-img"
+                                        src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/fc/agra.jpg"
+                                        alt="">
+                                    <div class="overlay">
+                                        <h4>Agra</h4>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="list.html">
+                                <div class="overlay_img_wrap">
+                                    <img class="city-img"
+                                        src="https://media-cdn.tripadvisor.com/media/photo-s/10/a3/3b/8a/screenshot-2017-09-12.jpg"
+                                        alt="">
+                                    <div class="overlay">
+                                        <h4>Jaipur</h4>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="list.html">
+                                <div class="overlay_img_wrap">
+                                    <img class="city-img"
+                                        src="https://media-cdn.tripadvisor.com/media/photo-s/0c/d2/2f/7a/palace-from-the-outside.jpg"
+                                        alt="">
+                                    <div class="overlay">
+                                        <h4>Bengaluru</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="text-center mt-5 mb-5">
+                        <a href="index.html" class="btn btn-secondary"> View More >></a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-div">
+                <div>
+                    <a href="contact.html" class="btn contact_btn"> Contact us </a>
+                    
+                </div>
+                <div class="copyright">
+                    <p class="m-0">@ 2020 ROOM SEARCH PVT. LTD.</p>
+                </div>
+                <div class="socialmedia_link">
+                    <a href="https://www.facebook.com/"> <img class="socialmedia-img" src="assests/images/facebook.png"
+                            alt=""> </a>
+                    <a href="https://www.instagram.com/"> <img class="socialmedia-img"
+                            src="assests/images/instagram.png" alt=""> </a>
+                    <a href="https://www.twitter.com/"> <img class="socialmedia-img" src="assests/images/twitter.png"
+                            alt=""> </a>
+
+                </div>
+
             </div>
-        </div>
+
+        </footer>
     </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
 </body>
 

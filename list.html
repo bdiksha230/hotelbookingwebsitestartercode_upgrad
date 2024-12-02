@@ -5,115 +5,149 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Booking project of upgrad</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/list.css">
     <link rel="stylesheet" href="styles/common.css">
+
+
 </head>
 
 <body>
-    <div class="main">
-        <div class="header">
-            <img class="logo" src="assests/images/logo.png" alt="">
-            <a href="login.html">Login</a>
-        </div>
-        <div class="content-Div">
-            <div class="list">
-                <a href="">List View</a>
+    <div class="page">
+
+        <header>
+            <div class="header">
+                <img class="logo" src="assests/images/logo.png" alt="">
+                <a href="login.html">Login</a>
             </div>
-            <div class="mapview">
-                <a href="">Map view</a>
+        </header>
+
+        <main>
+            <section class="list-view">
+                <div class="container mt-5">
+
+                    <ul class="nav nav-pills mb-5 justify-content-center" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home"
+                                role="tab" aria-controls="pills-home" aria-selected="true">List View</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile"
+                                role="tab" aria-controls="pills-profile" aria-selected="false">Map</a>
+                        </li>
+
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                            aria-labelledby="pills-home-tab">
+                            <div class="hotel_detail_list">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="card mb-3">
+                                            <div class="row no-gutters m-0">
+                                                <div class="col-md-6">
+                                                    <a href="detail.html">
+                                                        <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
+                                                            class="card-img" alt="...">
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title">Radisson Blu Hotel</h4>
+                                                        <p class="card-text">5 star</p>
+                                                        <p class="card-text"> New Delhi </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card mb-3">
+                                            <div class="row no-gutters m-0">
+                                                <div class="col-md-6">
+                                                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg"
+                                                        class="card-img" alt="...">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title">The Lalit New Delhi</h4>
+                                                        <p class="card-text"> 4.5 star</p>
+                                                        <p class="card-text"> New Delhi</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="card mb-3">
+                                            <div class="row no-gutters">
+                                                <div class="col-md-6">
+                                                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg"
+                                                        class="card-img" alt="...">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title">Taj Palace</h4>
+                                                        <p class="card-text">4.3 star</p>
+                                                        <p class="card-text"> New Delhi</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                            aria-labelledby="pills-profile-tab">
+                            <div class="container">
+                                <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png
+                                " alt="">
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+
+                </div>
+            </section>
+
+
+
+        </main>
+
+
+        <footer>
+            <div class="footer-div">
+                <div>
+                    <a href="contact.html" class="btn contact_btn"> Contact us </a>
+
+                </div>
+                <div class="copyright">
+                    <p class="m-0">@ 2020 ROOM SEARCH PVT. LTD.</p>
+                </div>
+                <div class="socialmedia_link">
+                    <a href="https://www.facebook.com/"> <img class="socialmedia-img" src="assests/images/facebook.png"
+                            alt=""> </a>
+                    <a href="https://www.instagram.com/"> <img class="socialmedia-img"
+                            src="assests/images/instagram.png" alt=""> </a>
+                    <a href="https://www.twitter.com/"> <img class="socialmedia-img" src="assests/images/twitter.png"
+                            alt=""> </a>
+
+                </div>
+
             </div>
 
-            <div class="hotels">
-                <div class="hotel_item">
-                    <a href="detail.html">  <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg
-                " alt=""></a>
-                    <a href="">
-                        <h4>Radisson Blu Hotel</h4>
-                    </a>
-                    <a href="">
-                        <p>5 star</p>
-                    </a>
-                    <a href="">
-                        <p>New Delhi</p>
-                    </a>
-                </div>
-                <div class="hotel_item">
-                  <a href="detail.html">  <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg
-                " alt=""></a>
-                    <a href="">
-                        <h4>The Lalit New Delhi</h4>
-                    </a>
-                    <a href="">
-                        <p>4.5 star</p>
-                    </a>
-                    <a href="">
-                        <p>New Delhi</p>
-                    </a>
-                </div>
-                <div class="hotel_item">
-                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg
-                " alt="">
-                    <a href="">
-                        <h4>Taj Palace</h4>
-                    </a>
-                    <a href="">
-                        <p>4.3 star</p>
-                    </a>
-                    <a href="">
-                        <p>New Delhi</p>
-                    </a>
-                </div>
-                <div class="hotel_item">
-                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg
-                " alt="">
-                    <a href="">
-                        <h4>Radisson Blu Hotel</h4>
-                    </a>
-                    <a href="">
-                        <p>5 star</p>
-                    </a>
-                    <a href="">
-                        <p>New Delhi</p>
-                    </a>
-                </div>
-                <div class="hotel_item">
-                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg
-                " alt="">
-                    <a href="">
-                        <h4>Radisson Blu Hotel</h4>
-                    </a>
-                    <a href="">
-                        <p>5 star</p>
-                    </a>
-                    <a href="">
-                        <p>New Delhi</p>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-        <div class="footer-div">
-            <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png
-            " alt="">
-
-            <div>
-                <a href="contact.html"> Contact us </a>
-            </div>
-
-            <div class="socialmedia_link">
-                <a href="https://www.facebook.com/"> <img class="socialmedia-img" src="assests/images/facebook.png"
-                        alt=""> </a>
-                <a href="https://www.instagram.com/"> <img class="socialmedia-img" src="assests/images/instagram.png"
-                        alt=""> </a>
-                <a href="https://www.twitter.com/"> <img class="socialmedia-img" src="assests/images/twitter.png"
-                        alt=""> </a>
-
-            </div>
-            <div class="copyright">
-                <p>@ 2020 ROOM SEARCH PVT. LTD.</p>
-            </div>
-        </div>
+        </footer>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
 </body>
 
