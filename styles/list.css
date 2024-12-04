@@ -4,3 +4,8 @@
 .list-view .hotel_detail_list .card-body{
     background-color: #c2c2c278;
 }
+.map-img{
+    width: 90%;
+    margin: auto;
+    display: block;
+}

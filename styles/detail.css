@@ -2,9 +2,21 @@
     width: 60%;
     margin: auto;
     display: block;
+    padding: 50px 0px;
 }
 .hotel-booking-section .hotel_booking_wrap{
     border: 2px solid rgb(164, 164, 164);
-    padding: 50px 70px;
     margin-top: 50px;
+}
+.hotel_booking_form{
+    padding: 50px 40px;
+}
+@media screen and (max-device-width: 991px) {
+    .hotel_booking_form{
+        padding: 10px 10px;
+    }
+    .detailpage_img{
+        width: 100%;
+        padding: 5px;
+    }
 }

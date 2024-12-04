@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Booking project of upgrad</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/detail.css">
     <link rel="stylesheet" href="styles/common.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
 
 </head>
 
@@ -15,8 +16,54 @@
     <div class="page">
         <header>
             <div class="header">
-                <img class="logo" src="assests/images/logo.png" alt="">
-                <div class=""> Header Div</div>
+                <div class="logo-wrap">
+                    <a href="index.html">
+                        <img class="logo" src="assests/images/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="login_btn">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white login-btn" data-toggle="modal" data-target="#login-modal">
+                        Login
+                    </button>
+
+
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="login-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp">
+
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary">Login</button>
+                                </form>
+                            </div>
+                            <!-- <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </header>
 
@@ -25,11 +72,11 @@
                 <div class="container-fluid">
                     <div class="hotel_booking_wrap">
                         <div class="row">
-                            <div class="col-md-8">
+                            <div class="col-md-6 col-lg-7">
                                 <img class="detailpage_img" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg
                         " alt="">
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-6 col-lg-5 left_border">
                                 <div class="hotel_booking_form">
                                     <form>
                                         <div class="form-group row">
@@ -69,7 +116,7 @@
                                                     <button type="submit" class="btn btn-primary">Book Now</button>
                                                 </a>
                                             </div>
-                                            <a href="payment.html"> Book Now 
+                                            <a href="payment.html"> Book Now
                                             </a>
                                         </div>
                                     </form>
@@ -80,23 +127,26 @@
                     </div>
 
                     <div class="hotel_bkking_details mt-5">
-                        <h2>Radisson Blue Hotel</h2>
-                        <p>Rating</p>
-                        <p>5 Star</p>
-                        <h3>AMENITIES</h3>
-                        <ul>
-                            <li>Room service</li>
-                            <li>Restaurant</li>
-                            <li>Buissness center</li>
-                            <li>Fitness center</li>
-                            <li>Pool</li>
-                        </ul>
-                        <h3>Description</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus quis, quos, dolorum eveniet
-                            iste,
-                            magnam recusandae deleniti veniam rerum et rem expedita libero. Non exercitationem autem
-                            alias
-                            quod ea. Inventore?</p>
+                        <div class="container">
+                            <h2>Radisson Blue Hotel</h2>
+                            <p>Rating</p>
+                            <p>5 Star</p>
+                            <h3>AMENITIES</h3>
+                            <ul>
+                                <li>Room service</li>
+                                <li>Restaurant</li>
+                                <li>Buissness center</li>
+                                <li>Fitness center</li>
+                                <li>Pool</li>
+                            </ul>
+                            <h3>Description</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus quis, quos, dolorum
+                                eveniet
+                                iste,
+                                magnam recusandae deleniti veniam rerum et rem expedita libero. Non exercitationem autem
+                                alias
+                                quod ea. Inventore?</p>
+                        </div>
                     </div>
                 </div>
             </section>

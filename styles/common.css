@@ -8,6 +8,12 @@ html, body{
     background-color: #e0e0e0;
     font-family: 'Ubuntu', sans-serif;
 }
+.bg-grey{
+    background-color: rgb(195 195 195 / 80%);
+}
+.left_border{
+    border-left: 2px solid grey;
+}
 section{
     padding-top: 60px;
     padding-bottom: 50px;
