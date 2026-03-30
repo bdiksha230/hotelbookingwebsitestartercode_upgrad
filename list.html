@@ -8,21 +8,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/list.css">
     <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="assests/font-awesome-4.7.0/css/font-awesome.min.css">
 
 
 </head>
 
 <body>
     <div class="page">
-
-        <header>
-            <div class="header">
-                <a href="index.html">
-                    <img class="logo" src="assests/images/logo.png" alt="logo">
-                </a>
-                <a href="login.html">Login</a>
-            </div>
-        </header>
 
         <main>
             <section class="list-view">
@@ -42,7 +34,7 @@
                     <div class="tab-content" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
                             aria-labelledby="pills-home-tab">
-                            <div class="hotel_detail_list">
+                            <div class="hotel_detail_list hotels_in_city">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="card mb-3">
@@ -53,10 +45,16 @@
                                                             class="card-img" alt="...">
                                                     </a>
                                                 </div>
-                                                <div class="col-md-6  col-sm-6 bg-grey">
+                                                <div class="col-md-6  col-sm-6 hotel_info">
                                                     <div class="card-body">
                                                         <h4 class="card-title">Radisson Blu Hotel</h4>
-                                                        <p class="card-text">5 star</p>
+                                                        <div class="rating">
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked" ></span>
+                                                            <span class="fa fa-star"></span>
+                                                        </div>
                                                         <p class="card-text"> New Delhi </p>
                                                     </div>
                                                 </div>
@@ -70,10 +68,16 @@
                                                     <img src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg"
                                                         class="card-img" alt="...">
                                                 </div>
-                                                <div class="col-md-6  col-sm-6 bg-grey">
+                                                <div class="col-md-6  col-sm-6 hotel_info">
                                                     <div class="card-body">
                                                         <h4 class="card-title">The Lalit New Delhi</h4>
-                                                        <p class="card-text"> 4.5 star</p>
+                                                        <div class="rating">
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked" ></span>
+                                                            <span class="fa fa-star"></span>
+                                                        </div>
                                                         <p class="card-text"> New Delhi</p>
                                                     </div>
                                                 </div>
@@ -88,10 +92,16 @@
                                                     <img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg"
                                                         class="card-img" alt="...">
                                                 </div>
-                                                <div class="col-md-6  col-sm-6 bg-grey">
+                                                <div class="col-md-6  col-sm-6 hotel_info">
                                                     <div class="card-body">
                                                         <h4 class="card-title">Taj Palace</h4>
-                                                        <p class="card-text">4.3 star</p>
+                                                         <div class="rating">
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star  "></span>
+                                                            <span class="fa fa-star  " ></span>
+                                                            <span class="fa fa-star"></span>
+                                                        </div>
                                                         <p class="card-text"> New Delhi</p>
                                                     </div>
                                                 </div>
@@ -124,30 +134,12 @@
         </main>
 
 
-        <footer>
-            <div class="footer-div">
-                <div>
-                    <a href="contact.html" class="btn contact_btn"> Contact us </a>
 
-                </div>
-                <div class="copyright">
-                    <p class="m-0">@ 2020 ROOM SEARCH PVT. LTD.</p>
-                </div>
-                <div class="socialmedia_link">
-                    <a href="https://www.facebook.com/"> <img class="socialmedia-img" src="assests/images/facebook.png"
-                            alt=""> </a>
-                    <a href="https://www.instagram.com/"> <img class="socialmedia-img"
-                            src="assests/images/instagram.png" alt=""> </a>
-                    <a href="https://www.twitter.com/"> <img class="socialmedia-img" src="assests/images/twitter.png"
-                            alt=""> </a>
-
-                </div>
-
-            </div>
-
-        </footer>
     </div>
 
+
+    <script src="header.js"></script>
+    <script src="footer.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 

@@ -10,3 +10,9 @@
 .payment_card .card-body-text{
     background-color: #c7c7c7;
 }
+.payment_card .card-title{
+    font-size: 22px;
+    color: black;
+    font-weight: 600;
+    margin-top: 30px;
+}

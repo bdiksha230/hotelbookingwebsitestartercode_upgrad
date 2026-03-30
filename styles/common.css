@@ -76,3 +76,13 @@ ul{
     color: #fff;
     background-color: #60b1ba;
 }
+
+.modal-backdrop { 
+    z-index: 9;
+}
+.checked {
+  color: orange;
+}
+.rating{
+    margin: 10px 0px;
+}

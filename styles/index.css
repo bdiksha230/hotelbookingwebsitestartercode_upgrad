@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 .banner{
     position: relative;
@@ -25,12 +26,11 @@
     height: 150px;
     object-fit: cover; 
     border-radius: 35px;
-    box-shadow: 9px 8px 11px 2px #bab6b6;
+    box-shadow: 10px 10px 10px grey;
 }
-.overlay {
+.overlay{
     position: absolute; 
-    bottom: 0; 
-    background: rgb(0, 0, 0);
+    bottom: 0;  
     background: rgba(0, 0, 0, 0.5); /* Black see-through */
     color: #f1f1f1; 
     width: 100%;
@@ -42,11 +42,16 @@
     text-align: center;
     border-radius: 35px;
   }
+  .overlay_img_wrap:hover .overlay{
+    opacity: 1;
+  }
   .overlay h4{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
+    font-size: 18px;
+    color: #f1f1f1;
   }
   .overlay_img_wrap{
     width: 150px;
